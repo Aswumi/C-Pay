@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "start": "expo start",
+    "start": "node init && expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest",
-    "build:android:production-apk": "npx eas-cli build --platform android --profile production",
-    "build:ios:production": "npx eas-cli build --platform ios --profile production",
-    "build:production:all": "npx eas-cli build --platform all --profile production"
+    "build:android:production-apk": "node init && npx eas-cli build --platform android --profile production",
+    "build:ios:production": "node init && npx eas-cli build --platform ios --profile production",
+    "build:production:all": "node init && npx eas-cli build --platform all --profile production"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
